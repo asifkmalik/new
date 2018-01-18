@@ -6,7 +6,7 @@ stage('Build') {
     bat "gradlew.bat clean test"
 }
 stage('Deploy') {
-    git push 'https://git.heroku.com/infinite-hollows-57032.git master'
+    git "push https://git.heroku.com/infinite-hollows-57032.git master"
 }
 
 }
